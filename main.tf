@@ -30,7 +30,7 @@ resource "github_repository_file" "canary" {
   repository          = "tfecli-drift-agent-sandbox"
   branch              = github_branch.canary.branch
   file                = "canary.txt"
-  content             = "hello from terraform\n"
+  content             = "drifted by hand at 2026-10-20T21:07:52Z\n"
   commit_message      = "canary: managed by terraform"
   overwrite_on_create = true
 }
